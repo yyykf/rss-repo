@@ -567,6 +567,74 @@
           "title": "How to Get Started with Version Control Using Git"
         }
       ]
+    },
+    {
+      "title": "阮一峰的网络日志",
+      "feedUrl": "http://www.ruanyifeng.com/blog/atom.xml",
+      "siteUrl": "http://www.ruanyifeng.com/blog/",
+      "articles": [
+        {
+          "id": "http://www.ruanyifeng.com/blog/2021/05/weekly-issue-159.html",
+          "author": null,
+          "description": "这里记录每周值得分享的科技内容，周五发布。...",
+          "link": "http://www.ruanyifeng.com/blog/2021/05/weekly-issue-159.html",
+          "publishedOn": "2021-05-21T00:17:00.000Z",
+          "wordCount": 915,
+          "title": "科技爱好者周刊（第 159 期）：游戏开发者的年薪"
+        },
+        {
+          "id": "http://www.ruanyifeng.com/blog/2021/05/china-economy-explanation.html",
+          "author": null,
+          "description": "重庆市前市长黄奇帆退休以后，受聘担任复旦大学特聘教授，定期给师生做讲座，介绍他对中国经济的看法。...",
+          "link": "http://www.ruanyifeng.com/blog/2021/05/china-economy-explanation.html",
+          "publishedOn": "2021-05-19T12:54:48.000Z",
+          "wordCount": 351,
+          "title": "中国经济的数字逻辑"
+        },
+        {
+          "id": "http://www.ruanyifeng.com/blog/2021/05/weekly-issue-158.html",
+          "author": null,
+          "description": "这里记录每周值得分享的科技内容，周五发布。...",
+          "link": "http://www.ruanyifeng.com/blog/2021/05/weekly-issue-158.html",
+          "publishedOn": "2021-05-14T00:17:14.000Z",
+          "wordCount": 921,
+          "title": "科技爱好者周刊（第 158 期）：内容渠道的贬值"
+        }
+      ]
+    },
+    {
+      "title": "美团技术团队",
+      "feedUrl": "https://rsshub.app/meituan/tech/home",
+      "siteUrl": "https://tech.meituan.com/feed/",
+      "articles": [
+        {
+          "id": "https://tech.meituan.com/2021/05/20/shepherd-api-gateway.html",
+          "author": "美团技术团队",
+          "description": "一、背景介绍\n1.1 API网关是什么？\nAPI网关是随着微服务（Microservice）概念兴起的一种架构模式。原本一个庞大的单体应用（All in one）业务系统被拆分成许多微服务（Microservice）系统进行独立的维护和部署，服务拆分带来的变化是API的规模成倍增长，API的管理难度也在日益增加，使用API网关发布和管理API逐渐成为一种趋势。一般来说，API网关是运行于外部请求与内部服务之间的一个流量入口，实现对外部请求的协议转换、鉴权、流控、参数校验、监控等通用功能。\n1.2 为什么要做Shepherd API网关？\n在没有Shepherd API网关之前，美团业务研发人员如果要将内部服务输出为对外的HTTP API接口。通常要搭建一个Web应用，用于完成基础的鉴权、限流、监控日志、参数校验、协议转换等工作，同时需要维护代码逻辑、基础组件的升级，研发效率相对比较低。此外，每个Web应用都需要维护机器、配置、数据库等，资源利用率也非常差。\n美团内部一些业务线苦于没有现成的解决方案，根据自身业务特点，研发了业务相关的API网关。放眼业界，亚马逊、阿里巴巴、腾讯等公司也都有成熟的API网关解决方案。\n因此，Shepherd API网关项目正式立项，我们的目标是为美团提供高性能、高可用、可扩展的统一API网关解决方案，让业务研发人员通过配置的方式即可对外开放功能和数据。\n\n1.3 使用Shepherd带来的收益是什么？\n从业务研发人员的角度来看，接入Shepherd API网关，能带来哪些收益呢？简而言之包括三个方面。\n\n提升研发效率\n业务研发人员只需要通过配置的方式即可快速开放服务接口。\nShepherd统一提供鉴权、限流、熔断等非业务基础能力。\nShepherd支持业务研发人员通过开发自定义组件的方式扩展API网关能力。\n\n降低沟通成本\n业务研发人员配置好A…",
+          "link": "https://tech.meituan.com/2021/05/20/shepherd-api-gateway.html",
+          "publishedOn": "2021-05-20T00:00:00.000Z",
+          "wordCount": 79,
+          "title": "百亿规模API网关服务Shepherd的设计与实现"
+        },
+        {
+          "id": "https://tech.meituan.com/2021/05/13/turing-os-online-serving.html",
+          "author": "美团技术团队",
+          "description": "0. 写在前面\nAI可以说是目前互联网行业炙手可热的“明星”。无论是老牌巨头，还是流量新贵，都在大力研发AI技术，为自家的业务赋能。美团很早就开始探索不同的机器学习模型在各种业务场景的应用，从最开始的线性模型、树模型，再到近几年的深度神经网络、BERT、DQN等，并成功应用于搜索、推荐、广告、配送等业务，也取得了较好的效果与产出。\n美团配送技术部建设的算法平台——Turing（下称图灵平台），旨在提供一站式的服务，覆盖数据预处理、特征生成、模型训练、模型评估、模型部署、在线预测、AB实验、算法效果评估的全流程，降低了算法工程师的使用门槛，帮助他们脱离繁琐的工程化开发，把有限的精力聚焦于业务和算法逻辑的迭代优化。具体的实践，大家可参考美团技术团队此前推送的一篇技术博客《一站式机器学习平台建设实践》。\n随着机器学习平台、特征平台、AB平台等陆续完成，配送技术团队发现在线预测部分逐渐成为算法开发和迭代的瓶颈，为此，我们开始启动图灵在线服务框架的整体研发。本文将与大家详细探讨图灵平台中的在线服务框架——图灵OS（Online Serving）的设计和实践，希望对大家能够有所帮助或者启发。\n随着图灵平台逐渐成熟，包括美团配送在内，已经有超过18个业务方接入了图灵平台，整体概况大致如下：共接入10+个BU（业务单元），100%覆盖美团配送核心业务场景，支持500+个在线模型、2500+个特征、180+个算法策略，每天支持百亿次的在线预测。通过图灵平台赋能，算法迭代周期由天级别降至小时级别，大幅提升了配送算法的迭代效率。\n1. 图灵平台介绍\n图灵平台是一站式算法平台，总体架构如下图1所示，底层依托于Kubernetes和Docker，实现了对CPU/GPU等资源的统一调度和管理，集成了Spark ML、XGBoost、TensorFlow等机器学习/深度学习框架，包含特征生产、模型训练、…",
+          "link": "https://tech.meituan.com/2021/05/13/turing-os-online-serving.html",
+          "publishedOn": "2021-05-13T00:00:00.000Z",
+          "wordCount": 88,
+          "title": "算法平台在线服务体系的演进与实践"
+        },
+        {
+          "id": "https://tech.meituan.com/2021/05/06/bff-graphql.html",
+          "author": "美团技术团队",
+          "description": "1 BFF的由来\nBFF一词来自Sam Newman的一篇博文《Pattern:Backends For Frontends》，指的是服务于前端的后端。BFF是解决什么问题的呢？据原文描述，随着移动互联网的兴起，原适应于桌面Web的服务端功能希望同时提供给移动App使用，而在这个过程中存在这样的问题：\n\n移动App和桌面Web在UI部分存在差异。\n移动App涉及不同的端，不仅有iOS、还有Android，这些不同端的UI之间存在差异。\n原有后端功能和桌面Web UI之间已经存在了较大的耦合。\n\n因为端的差异性存在，服务端的功能要针对端的差异进行适配和裁剪，而服务端的业务功能本身是相对单一的，这就产生了一个矛盾——服务端的单一业务功能和端的差异性诉求之间的矛盾。那么这个问题怎么解决呢？这也是文章的副标题所描述的”Single-purpose Edge Services for UIs and external parties”，引入BFF，由BFF来针对多端差异做适配，这也是目前业界广泛使用的一种模式。\n\n在实际业务的实践中，导致这种端差异性的原因有很多，有技术的原因，也有业务的原因。比如，用户的客户端是Android还是iOS，是大屏还是小屏，是什么版本。再比如，业务属于哪个行业，产品形态是什么，功能投放在什么场景，面向的用户群体是谁等等。这些因素都会带来面向端的功能逻辑的差异性。\n在这个问题上，笔者所在团队负责的商品展示业务有一定的发言权，同样的商品业务，在C端的展示功能逻辑，深刻受到商品类型、所在行业、交易形态、投放场所、面向群体等因素的影响。同时，面向消费者端的功能频繁迭代的属性，更是加剧并深化了这种矛盾，使其演化成了一种服务端单一稳定与端的差异灵活之间的矛盾，这也是商品展示（商品展示BFF）业务系统存在的必然性原因。本文主要在美团到店商品展示场景的背景下，介绍面临的…",
+          "link": "https://tech.meituan.com/2021/05/06/bff-graphql.html",
+          "publishedOn": "2021-05-06T00:00:00.000Z",
+          "wordCount": 129,
+          "title": "GraphQL及元数据驱动架构在后端BFF中的实践"
+        }
+      ]
     }
   ],
   "cliVersion": "1.8.1"
