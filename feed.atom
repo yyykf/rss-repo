@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-05-26T00:55:10.525Z</updated>
-    <generator>osmosfeed 1.8.1</generator>
+    <updated>2021-05-27T00:58:18.614Z</updated>
+    <generator>osmosfeed 1.9.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[v1.9.0]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.9.0</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.9.0"/>
+        <updated>2021-05-26T06:02:55.000Z</updated>
+        <summary type="html"><![CDATA[Added: experimental support for iTunes podcast feed: Demo | Source. With this new release, you can render an audio control to play the mp3 file and display iTunes episode duration. It is "experimental" due to these caveats:
+
+This feature is currently only available through custom template.
+iTunes has no strict format requirement for duration. The unit is most likely seconds but can be "hh:mm:ss" or "mm:ss" for some sources. A future version may expose a human readable string to the template.
+No image support yet. Some shows might have disabled CORS or use a relative URL for image, which forces osmosfeed to download the image during build. A future version may support it.
+You can't republish the podcast in the feed output. Supporting this goes beyond the scope of the project at the moment.
+Fixed: the articles in template data were not sorted.
+Thank you @Zenigata]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.8.1]]></title>
         <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.8.1</id>
