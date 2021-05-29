@@ -209,6 +209,22 @@
           "title": "GraphQL及元数据驱动架构在后端BFF中的实践"
         }
       ]
+    },
+    {
+      "title": "Kernel Aliyun",
+      "feedUrl": "https://rsshub.app/aliyun-kernel/index",
+      "siteUrl": "https://kernel.taobao.org/",
+      "articles": [
+        {
+          "id": "https://kernel.taobao.org//2017/10/Linux-bcc-ext4-Latency-Tracing/",
+          "author": null,
+          "description": "Linux Bcc Ext4 Latency Tracing",
+          "link": "https://kernel.taobao.org//2017/10/Linux-bcc-ext4-Latency-Tracing/",
+          "publishedOn": "2021-05-29T01:17:29.809Z",
+          "wordCount": 853,
+          "title": "Linux Bcc Ext4 Latency Tracing"
+        }
+      ]
     }
   ],
   "cliVersion": "1.9.0"
