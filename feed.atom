@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-06-01T01:57:12.926Z</updated>
-    <generator>osmosfeed 1.9.0</generator>
+    <updated>2021-06-02T02:05:13.240Z</updated>
+    <generator>osmosfeed 1.10.2</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[v1.10.2]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.10.2</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.10.2"/>
+        <updated>2021-06-01T04:39:30.000Z</updated>
+        <summary type="html"><![CDATA[Added: testing and CI/CD workflows]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021全国科技工作者日：致敬科技工作者]]></title>
         <id>https://tech.meituan.com/2021/05/30/2021-5-30.html</id>
