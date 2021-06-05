@@ -38,6 +38,54 @@
     </ul>
   </section>
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-03">2021-06-03</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tech.meituan.com/feed/">美团技术团队</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">ACL 2021｜美团提出基于对比学习的文本表示模型，效果相比BERT-flow提升8%</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/06/03/acl-2021-consert-bert.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>尽管基于BERT的模型在NLP诸多下游任务中取得了成功，直接从BERT导出的句向量表示往往被约束在一个很小的区域内，表现出很高的相似度，因而难以直接用于文本语义匹配。为解决BERT原生句子表示这种“坍缩”现象，美团NLP中心知识图谱团队提出了基于对比学习的句子表示迁移方法——ConSERT，通过在目标领域的无监督语料上Fine-tune，使模型生成的句子表示与下游任务的数据分布更加适配。在句子语义匹配（STS）任务的实验结果显示，同等设置下ConSERT相比此前的SOTA（BERT-flow）大幅提升了8%，并且在少样本场景下仍表现出较强的性能提升。
+
+论文：《ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer》
+会议：ACL 2021
+下载链接：https://arxiv.org/abs/2105.11741
+开源代码：https://github.com/yym6472/ConSERT
+
+1. 背景
+句向量表示学习在自然语言处理（NLP）领域占据重要地位，许多NLP任务的成功离不开训练优质的句子表示向量。特别是在文本语义匹配（Semantic Textual Similarity）、文本向量检索（Dense Text Retrieval）等任务上，模型通过计算两个句子编码后的Embedding在表示空间的相似度来衡量这两个句子语义上的相关程度，从而决定其匹配分数。
+尽管基于BERT的模型在诸多NLP任务上取得了不错的性能（通过有监督的Fine-tune），但其自身导出的句向量（不经过Fine-tune，对所有词向量求平均）质量较低，甚至比不上Glove的结果，因而难以反映出两个句子的语义相似度$^\text{[1][2][3][4]}$。我们在研究的过…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">CVPR 2021 | 基于Transformer的端到端视频实例分割方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/06/03/cvpr-transformer.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+实例分割是计算机视觉中的基础问题之一。目前，静态图像中的实例分割业界已经进行了很多的研究，但是对视频的实例分割（Video Instance Segmentation，简称VIS）的研究却相对较少。而真实世界中的摄像头所接收的，无论是自动驾驶背景下车辆实时感知的周围场景，还是网络媒体中的长短视频，大多数都是视频流信息而非纯图像信息。因而研究对视频建模的模型有着十分重要的意义，本文系美团无人配送团队在CVPR2021发表的一篇Oral论文: 《End-to-End Video Instance Segmentation with Transformers》的解读。本届CVPR大会共收到7015篇有效投稿，最终共1663篇论文被接收，论文录用率为23.7%，Oral的录用率仅为4%。
+背景
+图像的实例分割指的是对静态图像中感兴趣的物体进行检测和分割的任务。视频是包含多帧图像的信息载体，相对于静态图像来说，视频的信息更为丰富，因而建模也更为复杂。不同于静态图像仅含有空间的信息，视频同时含有时间维度的信息，因而更接近对真实世界的刻画。其中，视频的实例分割指的是对视频中感兴趣的物体进行检测、分割和跟踪的任务。如图1所示，第一行为给定视频的多帧图像序列，第二行为视频实例分割的结果，其中相同颜色对应同一个实例。视频实例分割不光要对单帧图像中的物体进行检测和分割，而且要在多帧的维度下找到每个物体的对应关系，即对其进行关联和跟踪。
+
+相关工作
+现有的视频实例分割算法通常为包含多模块、多阶段的复杂流程。最早的Mask Track R-CNN[1]算法同时包含实例分割和跟踪两个模块，通过在图像实例分割算法Mask R-CNN[2]的网络之上增加一个跟踪的分支实现，该分支主要用于实例特征的提取。在预测阶段，该方法利用外部Memory模块进行多帧实例特征的存储，并将该特征作为实例关联的一个要素…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-06-01">2021-06-01</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -514,41 +562,9 @@ Chore: Excluded testing files from repo.</span>
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-05-06">2021-05-06</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://tech.meituan.com/feed/">美团技术团队</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">GraphQL及元数据驱动架构在后端BFF中的实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/05/06/bff-graphql.html">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>1 BFF的由来
-BFF一词来自Sam Newman的一篇博文《Pattern:Backends For Frontends》，指的是服务于前端的后端。BFF是解决什么问题的呢？据原文描述，随着移动互联网的兴起，原适应于桌面Web的服务端功能希望同时提供给移动App使用，而在这个过程中存在这样的问题：
-
-移动App和桌面Web在UI部分存在差异。
-移动App涉及不同的端，不仅有iOS、还有Android，这些不同端的UI之间存在差异。
-原有后端功能和桌面Web UI之间已经存在了较大的耦合。
-
-因为端的差异性存在，服务端的功能要针对端的差异进行适配和裁剪，而服务端的业务功能本身是相对单一的，这就产生了一个矛盾——服务端的单一业务功能和端的差异性诉求之间的矛盾。那么这个问题怎么解决呢？这也是文章的副标题所描述的”Single-purpose Edge Services for UIs and external parties”，引入BFF，由BFF来针对多端差异做适配，这也是目前业界广泛使用的一种模式。
-
-在实际业务的实践中，导致这种端差异性的原因有很多，有技术的原因，也有业务的原因。比如，用户的客户端是Android还是iOS，是大屏还是小屏，是什么版本。再比如，业务属于哪个行业，产品形态是什么，功能投放在什么场景，面向的用户群体是谁等等。这些因素都会带来面向端的功能逻辑的差异性。
-在这个问题上，笔者所在团队负责的商品展示业务有一定的发言权，同样的商品业务，在C端的展示功能逻辑，深刻受到商品类型、所在行业、交易形态、投放场所、面向群体等因素的影响。同时，面向消费者端的功能频繁迭代的属性，更是加剧并深化了这种矛盾，使其演化成了一种服务端单一稳定与端的差异灵活之间的矛盾，这也是商品展示（商品展示BFF）业务系统存在的必然性原因。本文主要在美团到店商品展示场景的背景下，介绍面临的…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-06-04T01:26:34.812Z">2021-06-04T01:26:34.812Z</time>
+    <time id="build-timestamp" datetime="2021-06-05T01:07:57.607Z">2021-06-05T01:07:57.607Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.10.2</a></span>
   </footer>
   <script src="index.js"></script>
