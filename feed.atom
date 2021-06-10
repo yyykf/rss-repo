@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-06-07T01:00:36.933Z</updated>
+    <updated>2021-06-10T00:39:37.087Z</updated>
     <generator>osmosfeed 1.10.2</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
@@ -289,32 +289,6 @@ AI可以说是目前互联网行业炙手可热的“明星”。无论是老牌
 图灵平台是一站式算法平台，总体架构如下图1所示，底层依托于Kubernetes和Docker，实现了对CPU/GPU等资源的统一调度和管理，集成了Spark ML、XGBoost、TensorFlow等机器学习/深度学习框架，包含特征生产、模型训练、…]]></summary>
         <author>
             <name>美团技术团队</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.4.0]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.4.0</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.4.0"/>
-        <updated>2021-05-10T08:55:42.000Z</updated>
-        <summary type="html"><![CDATA[Added: Basic theme customization: Demo | Source | Docs.]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.6.0]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.6.0</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.6.0"/>
-        <updated>2021-05-10T08:15:20.000Z</updated>
-        <summary type="html"><![CDATA[Added: Link from the title of a subscription to its website.
-Added: Store feedUrl and siteUrl for each source in cache.
-Added: Semantic element (<time>) for timestamp on the UI.
-Added: Semantic API for theming the default template. Demo | Source | Docs
-Changed: Moved feed metadata from article level to feed level in cache.
-Fixed: Any html-like text was stripped from title. Fixed with encoded text.
-Removed: href for each source in cache. The value was never used so it's not a breaking change.]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
         </author>
     </entry>
 </feed>

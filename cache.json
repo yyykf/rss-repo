@@ -67,24 +67,6 @@
           "publishedOn": "2021-05-16T01:42:24.000Z",
           "wordCount": 286,
           "title": "v1.7.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.4.0",
-          "author": null,
-          "description": "Added: Basic theme customization: Demo | Source | Docs.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.4.0",
-          "publishedOn": "2021-05-10T08:55:42.000Z",
-          "wordCount": 276,
-          "title": "v1.4.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.6.0",
-          "author": null,
-          "description": "Added: Link from the title of a subscription to its website.\nAdded: Store feedUrl and siteUrl for each source in cache.\nAdded: Semantic element (<time>) for timestamp on the UI.\nAdded: Semantic API for theming the default template. Demo | Source | Docs\nChanged: Moved feed metadata from article level to feed level in cache.\nFixed: Any html-like text was stripped from title. Fixed with encoded text.\nRemoved: href for each source in cache. The value was never used so it's not a breaking change.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.6.0",
-          "publishedOn": "2021-05-10T08:15:20.000Z",
-          "wordCount": 352,
-          "title": "v1.6.0"
         }
       ]
     },
