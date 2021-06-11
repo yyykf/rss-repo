@@ -16,6 +16,73 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-11">2021-06-11</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">科技爱好者周刊（第 162 期）：生活就像《吃豆人》游戏</summary>
+                <a class="article-summary-link article-summary-box-outer" href="http://www.ruanyifeng.com/blog/2021/06/weekly-issue-162.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>这里记录每周值得分享的科技内容，周五发布。...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-10">2021-06-10</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tech.meituan.com/feed/">美团技术团队</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">SIGIR 2021 | 广告系统位置偏差的CTR模型优化方案</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/06/10/deep-position-wise-interaction-network-for-ctr-prediction.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>近些年来，由于人工智能技术的高速发展，所带来的公平性问题也愈发受到关注。同样的，广告技术也存在着许多公平性问题，由于公平性问题造成的偏差对广告系统的生态会产生较大的负面影响。图1所示的是广告系统中的反馈环路[1]，广告系统通过累积的用户交互反馈数据基于一定的假设去训练模型，模型对广告进行预估排序展示给用户，用户基于可看到的广告进行交互进而累积到数据中。在该环路中，位置偏差、流行度偏差等各种不同类型的偏差会在各环节中不断累积，最终导致广告系统的生态不断恶化，形成“强者愈强、弱者愈弱”的马太效应。
+由于偏差对广告系统和推荐系统的生态有着极大的影响，针对消除偏差的研究工作也在不断增加。比如国际信息检索会议SIGIR在2018年和2020年组织了一些关注于消除偏差主题的专门会议，同时也给一些基于偏差和公平性的论文颁发了最佳论文奖（Best Paper）[2,3]。KDD Cup 2020的其中一个赛道也基于电子商务推荐中的流行度偏差进行开展[1]。
+
+美团到店广告平台算法团队基于多年来在广告领域上积累的经验，一直在数据偏差等业界挑战性问题不断进行深入优化与算法创新。在之前分享的《KDD Cup 2020 Debiasing比赛冠军技术方案与广告业务应用》一文[4]中，团队分享了在KDD Cup比赛中取得冠军的选择性偏差以及流行度偏差的解决方案，同时也分享了在广告业务上偏差优化的技术框架。
+本文基于这一技术框架进行继续介绍，聚焦于位置偏差问题的最新进展，并详细地介绍团队在美团广告取得显著业务效果的位置偏差CTR模型优化方案，以该方案为基础形成的论文《Deep Position-wise Interaction Network for CTR Prediction》也被国际顶级会议SIGIR 2021录用。
+1. 背景
+美团到店广告平台算法团队基于美团和点评双侧的广告业务场景，不断进行…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">美团民宿跨端复用框架设计与实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/06/10/react-native-hybrid-practice-dsl-in-meituan.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>从 PC 时代、移动时代到万物互联的 IoT 时代，伴随终端设备的日趋多样化，跨端复用的种子自此落地，开始生根发芽。从依靠容器能力、各类离线化预装包的 Hybrid 方案，到通过 JSC 连接 JavaScript 生态与原生控件，结合视图框架（React、Vue等）寻找效率、动态性和性能更均衡的 Native 容器方案（React Native、Weex 等），接着由微信牵头的以多进程 WebView、容器标准化的小程序方案出世，各平台小程序随之春笋萌发，随后带来了国内Taro、uni-app、Rax、Remax等多端框架的百家争鸣。
+从业务角度出发，跨端技术演进更多是在不同阶段、不同时间段内业务效率上的选择，美团民宿业务就是在大前端融合的浪潮中逐浪前行，不断探索和迭代抉择，为解决业务痛点而孵化出跨端框架技术。本文主要分享美团民宿在跨端复用技术探索层面以及业务实践过程中积累的经验，希望能给大家带来一些帮助或者启发。
+1. 背景
+1.1 美团民宿业务介绍
+美团民宿专注为消费者提供“住得不一样”的旅居体验，提供的服务包括民宿、酒店、公寓、客栈、短租、宾馆、旅行住宿等，同时包括树屋、房车、INS 风等新奇的网红民宿。美团民宿自上线之后，业务发展迅猛，在供给侧，房源类型不断丰富，各类分销、直销、直连、境外陆续推出，房源信息维度不断扩展，筛选、推荐、信息呈现也不断变得复杂。同时伴随着营销方式的丰富、房东管理、经营、服务的不断扩充，民宿的业务也越来越复杂。美团民宿大前端伴随业务的发展不断自我迭代，移动端整体架构也随之不断调整、升级，以寻求匹配业务多样化、复杂化的发展诉求。
+1.2 美团民宿移动端现状
+业务的发展和跨端复用技术的不断演化，让美团民宿客户端从业务刚起步的单端 Native App，到跨 App（民宿 App、美团 App、点评 App ）的 Native 复用和以 SSR…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-06-04">2021-06-04</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -499,7 +566,7 @@ AI可以说是目前互联网行业炙手可热的“明星”。无论是老牌
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-06-10T00:39:37.058Z">2021-06-10T00:39:37.058Z</time>
+    <time id="build-timestamp" datetime="2021-06-11T00:36:49.197Z">2021-06-11T00:36:49.197Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.10.2</a></span>
   </footer>
   <script src="index.js"></script>
