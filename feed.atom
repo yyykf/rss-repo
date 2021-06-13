@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-06-11T00:36:49.213Z</updated>
+    <updated>2021-06-13T00:38:31.049Z</updated>
     <generator>osmosfeed 1.10.2</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
@@ -305,32 +305,6 @@ Chore: rendering logic refactoring. Adopting functional paradigm.
 Thank you @tianheg, @onnyyonn]]></summary>
         <author>
             <name>Release notes from osmosfeed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科技爱好者周刊（第 158 期）：内容渠道的贬值]]></title>
-        <id>http://www.ruanyifeng.com/blog/2021/05/weekly-issue-158.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2021/05/weekly-issue-158.html"/>
-        <updated>2021-05-14T00:17:14.000Z</updated>
-        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[算法平台在线服务体系的演进与实践]]></title>
-        <id>https://tech.meituan.com/2021/05/13/turing-os-online-serving.html</id>
-        <link href="https://tech.meituan.com/2021/05/13/turing-os-online-serving.html"/>
-        <updated>2021-05-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[0. 写在前面
-AI可以说是目前互联网行业炙手可热的“明星”。无论是老牌巨头，还是流量新贵，都在大力研发AI技术，为自家的业务赋能。美团很早就开始探索不同的机器学习模型在各种业务场景的应用，从最开始的线性模型、树模型，再到近几年的深度神经网络、BERT、DQN等，并成功应用于搜索、推荐、广告、配送等业务，也取得了较好的效果与产出。
-美团配送技术部建设的算法平台——Turing（下称图灵平台），旨在提供一站式的服务，覆盖数据预处理、特征生成、模型训练、模型评估、模型部署、在线预测、AB实验、算法效果评估的全流程，降低了算法工程师的使用门槛，帮助他们脱离繁琐的工程化开发，把有限的精力聚焦于业务和算法逻辑的迭代优化。具体的实践，大家可参考美团技术团队此前推送的一篇技术博客《一站式机器学习平台建设实践》。
-随着机器学习平台、特征平台、AB平台等陆续完成，配送技术团队发现在线预测部分逐渐成为算法开发和迭代的瓶颈，为此，我们开始启动图灵在线服务框架的整体研发。本文将与大家详细探讨图灵平台中的在线服务框架——图灵OS（Online Serving）的设计和实践，希望对大家能够有所帮助或者启发。
-随着图灵平台逐渐成熟，包括美团配送在内，已经有超过18个业务方接入了图灵平台，整体概况大致如下：共接入10+个BU（业务单元），100%覆盖美团配送核心业务场景，支持500+个在线模型、2500+个特征、180+个算法策略，每天支持百亿次的在线预测。通过图灵平台赋能，算法迭代周期由天级别降至小时级别，大幅提升了配送算法的迭代效率。
-1. 图灵平台介绍
-图灵平台是一站式算法平台，总体架构如下图1所示，底层依托于Kubernetes和Docker，实现了对CPU/GPU等资源的统一调度和管理，集成了Spark ML、XGBoost、TensorFlow等机器学习/深度学习框架，包含特征生产、模型训练、…]]></summary>
-        <author>
-            <name>美团技术团队</name>
         </author>
     </entry>
 </feed>
