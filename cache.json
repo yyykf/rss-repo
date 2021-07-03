@@ -13,15 +13,6 @@
           "publishedOn": "2021-06-23T05:57:59.000Z",
           "wordCount": 370,
           "title": "v1.11.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.10.2",
-          "author": null,
-          "description": "Added: testing and CI/CD workflows",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.10.2",
-          "publishedOn": "2021-06-01T04:39:30.000Z",
-          "wordCount": 268,
-          "title": "v1.10.2"
         }
       ]
     },
@@ -30,6 +21,24 @@
       "feedUrl": "http://www.ruanyifeng.com/blog/atom.xml",
       "siteUrl": "http://www.ruanyifeng.com/blog/",
       "articles": [
+        {
+          "id": "http://www.ruanyifeng.com/blog/2021/07/weekly-issue-165.html",
+          "author": null,
+          "description": "这里记录每周值得分享的科技内容，周五发布。...",
+          "link": "http://www.ruanyifeng.com/blog/2021/07/weekly-issue-165.html",
+          "publishedOn": "2021-07-02T00:19:51.000Z",
+          "wordCount": 875,
+          "title": "科技爱好者周刊（第 165 期）：全端 App 的时代"
+        },
+        {
+          "id": "http://www.ruanyifeng.com/blog/2021/06/drunk-post-of-a-programmer.html",
+          "author": null,
+          "description": "美国最大的论坛 Reddit，最近有一个热帖。...",
+          "link": "http://www.ruanyifeng.com/blog/2021/06/drunk-post-of-a-programmer.html",
+          "publishedOn": "2021-06-28T01:10:50.000Z",
+          "wordCount": 665,
+          "title": "程序员的酒后真言"
+        },
         {
           "id": "http://www.ruanyifeng.com/blog/2021/06/weekly-issue-164.html",
           "author": null,
@@ -65,15 +74,6 @@
           "publishedOn": "2021-06-04T00:29:26.000Z",
           "wordCount": 466,
           "title": "科技爱好者周刊（第 161 期）：再见了，学术硕士"
-        },
-        {
-          "id": "http://www.ruanyifeng.com/blog/2021/05/weekly-issue-160.html",
-          "author": null,
-          "description": "这里记录每周值得分享的科技内容，周五发布。...",
-          "link": "http://www.ruanyifeng.com/blog/2021/05/weekly-issue-160.html",
-          "publishedOn": "2021-05-28T00:20:22.000Z",
-          "wordCount": 464,
-          "title": "科技爱好者周刊（第 160 期）：中年码农的困境"
         }
       ]
     },
@@ -117,33 +117,6 @@
           "publishedOn": "2021-06-10T00:00:00.000Z",
           "wordCount": 587,
           "title": "美团民宿跨端复用框架设计与实践"
-        },
-        {
-          "id": "https://tech.meituan.com/2021/06/03/acl-2021-consert-bert.html",
-          "author": "美团技术团队",
-          "description": "尽管基于BERT的模型在NLP诸多下游任务中取得了成功，直接从BERT导出的句向量表示往往被约束在一个很小的区域内，表现出很高的相似度，因而难以直接用于文本语义匹配。为解决BERT原生句子表示这种“坍缩”现象，美团NLP中心知识图谱团队提出了基于对比学习的句子表示迁移方法——ConSERT，通过在目标领域的无监督语料上Fine-tune，使模型生成的句子表示与下游任务的数据分布更加适配。在句子语义匹配（STS）任务的实验结果显示，同等设置下ConSERT相比此前的SOTA（BERT-flow）大幅提升了8%，并且在少样本场景下仍表现出较强的性能提升。\n\n论文：《ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer》\n会议：ACL 2021\n下载链接：https://arxiv.org/abs/2105.11741\n开源代码：https://github.com/yym6472/ConSERT\n\n1. 背景\n句向量表示学习在自然语言处理（NLP）领域占据重要地位，许多NLP任务的成功离不开训练优质的句子表示向量。特别是在文本语义匹配（Semantic Textual Similarity）、文本向量检索（Dense Text Retrieval）等任务上，模型通过计算两个句子编码后的Embedding在表示空间的相似度来衡量这两个句子语义上的相关程度，从而决定其匹配分数。\n尽管基于BERT的模型在诸多NLP任务上取得了不错的性能（通过有监督的Fine-tune），但其自身导出的句向量（不经过Fine-tune，对所有词向量求平均）质量较低，甚至比不上Glove的结果，因而难以反映出两个句子的语义相似度$^\\text{[1][2][3][4]}$。我们在研究的过…",
-          "link": "https://tech.meituan.com/2021/06/03/acl-2021-consert-bert.html",
-          "publishedOn": "2021-06-03T00:00:00.000Z",
-          "wordCount": 551,
-          "title": "ACL 2021｜美团提出基于对比学习的文本表示模型，效果相比BERT-flow提升8%"
-        },
-        {
-          "id": "https://tech.meituan.com/2021/06/03/cvpr-transformer.html",
-          "author": "美团技术团队",
-          "description": "前言\n实例分割是计算机视觉中的基础问题之一。目前，静态图像中的实例分割业界已经进行了很多的研究，但是对视频的实例分割（Video Instance Segmentation，简称VIS）的研究却相对较少。而真实世界中的摄像头所接收的，无论是自动驾驶背景下车辆实时感知的周围场景，还是网络媒体中的长短视频，大多数都是视频流信息而非纯图像信息。因而研究对视频建模的模型有着十分重要的意义，本文系美团无人配送团队在CVPR2021发表的一篇Oral论文: 《End-to-End Video Instance Segmentation with Transformers》的解读。本届CVPR大会共收到7015篇有效投稿，最终共1663篇论文被接收，论文录用率为23.7%，Oral的录用率仅为4%。\n背景\n图像的实例分割指的是对静态图像中感兴趣的物体进行检测和分割的任务。视频是包含多帧图像的信息载体，相对于静态图像来说，视频的信息更为丰富，因而建模也更为复杂。不同于静态图像仅含有空间的信息，视频同时含有时间维度的信息，因而更接近对真实世界的刻画。其中，视频的实例分割指的是对视频中感兴趣的物体进行检测、分割和跟踪的任务。如图1所示，第一行为给定视频的多帧图像序列，第二行为视频实例分割的结果，其中相同颜色对应同一个实例。视频实例分割不光要对单帧图像中的物体进行检测和分割，而且要在多帧的维度下找到每个物体的对应关系，即对其进行关联和跟踪。\n\n相关工作\n现有的视频实例分割算法通常为包含多模块、多阶段的复杂流程。最早的Mask Track R-CNN[1]算法同时包含实例分割和跟踪两个模块，通过在图像实例分割算法Mask R-CNN[2]的网络之上增加一个跟踪的分支实现，该分支主要用于实例特征的提取。在预测阶段，该方法利用外部Memory模块进行多帧实例特征的存储，并将该特征作为实例关联的一个要素…",
-          "link": "https://tech.meituan.com/2021/06/03/cvpr-transformer.html",
-          "publishedOn": "2021-06-03T00:00:00.000Z",
-          "wordCount": 142,
-          "title": "CVPR 2021 | 基于Transformer的端到端视频实例分割方法"
-        },
-        {
-          "id": "https://tech.meituan.com/2021/05/30/2021-5-30.html",
-          "author": "美团技术团队",
-          "description": "你因科技而精彩，科技因你而腾飞。",
-          "link": "https://tech.meituan.com/2021/05/30/2021-5-30.html",
-          "publishedOn": "2021-05-30T00:00:00.000Z",
-          "wordCount": 15,
-          "title": "2021全国科技工作者日：致敬科技工作者"
         }
       ]
     },
@@ -151,17 +124,7 @@
       "title": "Kernel Aliyun",
       "feedUrl": "https://rsshub.app/aliyun-kernel/index",
       "siteUrl": "https://kernel.taobao.org/",
-      "articles": [
-        {
-          "id": "https://kernel.taobao.org//2017/10/Linux-bcc-ext4-Latency-Tracing/",
-          "author": null,
-          "description": "Linux Bcc Ext4 Latency Tracing",
-          "link": "https://kernel.taobao.org//2017/10/Linux-bcc-ext4-Latency-Tracing/",
-          "publishedOn": "2021-05-29T01:17:29.809Z",
-          "wordCount": 853,
-          "title": "Linux Bcc Ext4 Latency Tracing"
-        }
-      ]
+      "articles": []
     }
   ],
   "cliVersion": "1.11.0"
