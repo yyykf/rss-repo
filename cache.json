@@ -110,22 +110,6 @@
           "title": "美团民宿跨端复用框架设计与实践"
         }
       ]
-    },
-    {
-      "title": "Kernel Aliyun",
-      "feedUrl": "https://rsshub.app/aliyun-kernel/index",
-      "siteUrl": "https://kernel.taobao.org/",
-      "articles": [
-        {
-          "id": "https://kernel.taobao.org//2017/10/Linux-bcc-ext4-Latency-Tracing/",
-          "author": null,
-          "description": "Linux Bcc Ext4 Latency Tracing",
-          "link": "https://kernel.taobao.org//2017/10/Linux-bcc-ext4-Latency-Tracing/",
-          "publishedOn": "2021-07-04T00:37:08.800Z",
-          "wordCount": 853,
-          "title": "Linux Bcc Ext4 Latency Tracing"
-        }
-      ]
     }
   ],
   "cliVersion": "1.11.0"
