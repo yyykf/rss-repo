@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-07-10T00:35:23.217Z</updated>
+    <updated>2021-07-11T00:42:15.146Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
@@ -137,16 +137,6 @@ Thank you @PiyushLosalka]]></summary>
 实现智能算力的整体思路，是在系统算力容量约束下，对不同价值流量进…]]></summary>
         <author>
             <name>美团技术团队</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科技爱好者周刊（第 162 期）：生活就像《吃豆人》游戏]]></title>
-        <id>http://www.ruanyifeng.com/blog/2021/06/weekly-issue-162.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2021/06/weekly-issue-162.html"/>
-        <updated>2021-06-11T00:15:31.000Z</updated>
-        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
         </author>
     </entry>
 </feed>
