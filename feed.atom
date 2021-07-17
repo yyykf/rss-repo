@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-07-16T00:37:34.594Z</updated>
+    <updated>2021-07-17T00:36:28.126Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[科技爱好者周刊（第 167 期）：广告拦截器太过分了]]></title>
+        <id>http://www.ruanyifeng.com/blog/2021/07/weekly-issue-167.html</id>
+        <link href="http://www.ruanyifeng.com/blog/2021/07/weekly-issue-167.html"/>
+        <updated>2021-07-16T00:45:10.000Z</updated>
+        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
+        <author>
+            <name>阮一峰的网络日志</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[本地生活综合性需求图谱的构建及应用]]></title>
         <id>https://tech.meituan.com/2021/07/15/construction-and-application-of-lifestyle-general-needs-net.html</id>
@@ -139,25 +149,6 @@ Thank you @PiyushLosalka]]></summary>
         <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
         <author>
             <name>阮一峰的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[美团外卖广告智能算力的探索与实践]]></title>
-        <id>https://tech.meituan.com/2021/06/17/waimai-ai-advertisement.html</id>
-        <link href="https://tech.meituan.com/2021/06/17/waimai-ai-advertisement.html"/>
-        <updated>2021-06-17T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[1. 业务背景
-目前，美团外卖日订单量已突破4000万，成为美团最为重要的业务之一。外卖广告服务也从最初的支撑单一业务线发展到现在的十余条业务线，服务整体承受的流量日益增长，所消耗的机器资源也达到了一定的规模。
-在外卖场景下，流量呈现明显的双峰结构，即午餐和晚餐两个时段为流量波峰，其余时段流量较小。在这种流量特点下，外卖广告服务在高峰时段面临较大的性能压力，在非高峰时段存在大量算力冗余，从全局来看，机器算力分配效率低，流量价值仍然具有较大的挖掘空间。一方面，流量消耗的算力没有根据流量价值进行动态的分配，造成系统在高价值流量上算力分配不足，价值没有得到充分的挖掘，而在低价值流量上，却存在浪费大量算力的现象；另一方面，在非高峰时段，系统流量较低，导致系统的整体资源利用率偏低，限制了系统获取更高的业务收益。
-
-因此，算力需要进行更合理的分配来得到更加高效的利用。当前业界对于动态算力分配的研究较少，以阿里巴巴定向广告平台的DCAF[1]为代表，该方案根据流量价值进行差异化的算力分配，对不同价值的流量分配不同的候选队列长度，实现有限资源约束下的收益最大化。DCAF提供了一种优秀的解决方案，但该方案在外卖广告场景下存在一定的局限性。
-针对外卖广告场景，外卖广告技术团队在DCAF方案的基础上进行了一系列探索和改进，首次进行了队列弹性分配和模型弹性分配相结合的尝试，并取得了不错的收益。一方面，在机器资源持平的情况下，CPM可以提升2.3%；另一方面，在业务收益持平的情况下，机器资源可以减少40%，最后我们在外卖列表广告精排阶段推全了机器资源持平的方案。
-2. 整体思路
-
-在外卖广告投放引擎中，为应对极大的在线流量压力和庞大的候选集，我们将整个检索过程设计成候选集依次递减的漏斗型级联架构，主要包含召回、粗排、精排、机制等模块。
-实现智能算力的整体思路，是在系统算力容量约束下，对不同价值流量进…]]></summary>
-        <author>
-            <name>美团技术团队</name>
         </author>
     </entry>
 </feed>
