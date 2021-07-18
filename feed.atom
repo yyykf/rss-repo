@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-07-17T00:36:28.126Z</updated>
+    <updated>2021-07-18T00:37:42.463Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
@@ -139,16 +139,6 @@ Changed: sources in template data is now ordered by last update timestamp (as op
 Thank you @PiyushLosalka]]></summary>
         <author>
             <name>Release notes from osmosfeed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科技爱好者周刊（第 163 期）：你的城市有多少张病床？]]></title>
-        <id>http://www.ruanyifeng.com/blog/2021/06/weekly-issue-163.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2021/06/weekly-issue-163.html"/>
-        <updated>2021-06-18T00:15:03.000Z</updated>
-        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
         </author>
     </entry>
 </feed>
