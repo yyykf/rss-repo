@@ -2,10 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-07-22T00:38:25.722Z</updated>
+    <updated>2021-07-23T00:37:58.732Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[科技爱好者周刊（第 168 期）：游戏《底特律：变人》]]></title>
+        <id>http://www.ruanyifeng.com/blog/2021/07/weekly-issue-168.html</id>
+        <link href="http://www.ruanyifeng.com/blog/2021/07/weekly-issue-168.html"/>
+        <updated>2021-07-23T00:34:09.000Z</updated>
+        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
+        <author>
+            <name>阮一峰的网络日志</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[美团终端消息投递服务Pike的演进之路]]></title>
+        <id>https://tech.meituan.com/2021/07/22/pike-2.0.html</id>
+        <link href="https://tech.meituan.com/2021/07/22/pike-2.0.html"/>
+        <updated>2021-07-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1 Pike的前世今生
+1.1 Pike 1.0的诞生背景
+2015年，美团诞生了Shark终端网络通道，为公司移动端提供长连代理加速服务。Shark通过网络接入点的全球多地部署和保持长连来提升网络请求的端到端成功率，降低端到端延时，从而提升用户体验。
+Pike 1.0是基于Shark长连通道实现的应用内推送服务。由于底层传输基于Shark长连通道，使得Pike 1.0天生便具有了低延时、高可靠、防DNS劫持等优秀基因。目前Pike 1.0在美团内部的实时互动、营销推送、状态下发、配置同步等业务场景都有广泛使用。
+1.2 Pike 1.0的工作流程
+移动端SDK会在每次长连接创建成功后，使用APPID、设备唯一标识UnionID（美团唯一标识、点评唯一标识等）向服务器发起注册，在注册成功之后业务服务端就可以通过Pike 1.0服务端SDK提供的接口，主动向设备的App推送消息。服务端推送的消息通过长连接通道抵达客户端，最后通过注册的回调接口投递给业务方。整体工作流程参见下图：
+
+1.3 Pike 1.0的优势
+Pike 1.0底层传输基于Shark长连通道，所以Pike 1.0在以下几个方面有不错的表现：
+
+防DNS劫持：底层通道直接使用IP直连，省去DNS解析耗时的同时也避免了被DNS劫持的风险。
+低延时：Shark长连接采用就近接入点长连接的方式，省去了传统HTTP传输需要多次建连、握手的消耗，端到端数据传输延时相比HTTP大幅缩短。
+安全性好：Shark采用自定义二进制协议进行数据传输，进行了通道级别的TLS加密，防篡改，更安全。
+更好的境外体验：Pike 1.0与Shark共享服务集群，Shark长连通道在海外多地都部署了接入点，代理加速接入，网络延时及成功率表现要优于常规请求。
+
+1.4 Pike 1.0的痛点
+Pike 1.0作为Shark的衍生产品固然有其闪光…]]></summary>
+        <author>
+            <name>美团技术团队</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[科技爱好者周刊（第 167 期）：广告拦截器太过分了]]></title>
         <id>http://www.ruanyifeng.com/blog/2021/07/weekly-issue-167.html</id>
@@ -120,25 +156,6 @@
 什么样，核心概念某一方面的属性，对核心概念某一方面的细化。“带露台的餐厅”、“亲子游乐园”、“…]]></summary>
         <author>
             <name>美团技术团队</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.11.0]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.0</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.0"/>
-        <updated>2021-06-23T05:57:59.000Z</updated>
-        <summary type="html"><![CDATA[Added: support an experimental template for YouTube feed 📺 Demo | Source
-
-Aggregate content from any YouTube channel rss url https://www.youtube.com/feeds/videos.xml?channel_id=<replace_with_channel_id>
-Videos are embedded via iframe and loading accelerated by youtube-lite-embed
-Ads are reduced thanks to YouTube's policy for embedded videos 🙃
-Works on mobile devices with butter smooth horizontal scroll.
-Caveat: the template works only with YouTube content. You cannot mix textual RSS feed or other video sources such as Vimeo.
-Changed: Default HTML template meta tag adjusted to match convention
-Changed: sources in template data is now ordered by last update timestamp (as opposed to alphabetical)
-Thank you @PiyushLosalka]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
         </author>
     </entry>
 </feed>
