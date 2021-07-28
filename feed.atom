@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-07-27T00:38:48.977Z</updated>
+    <updated>2021-07-28T00:38:39.985Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
@@ -114,16 +114,6 @@ Pike 1.0作为Shark的衍生产品固然有其闪光…]]></summary>
         <link href="http://www.ruanyifeng.com/blog/2021/07/weekly-issue-165.html"/>
         <updated>2021-07-02T00:19:51.000Z</updated>
         <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[程序员的酒后真言]]></title>
-        <id>http://www.ruanyifeng.com/blog/2021/06/drunk-post-of-a-programmer.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2021/06/drunk-post-of-a-programmer.html"/>
-        <updated>2021-06-28T01:10:50.000Z</updated>
-        <summary type="html"><![CDATA[美国最大的论坛 Reddit，最近有一个热帖。...]]></summary>
         <author>
             <name>阮一峰的网络日志</name>
         </author>
