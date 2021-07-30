@@ -16,6 +16,66 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-07-30">2021-07-30</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">科技爱好者周刊（第 169 期）：五菱汽车的产品设计</summary>
+                <a class="article-summary-link article-summary-box-outer" href="http://www.ruanyifeng.com/blog/2021/07/weekly-issue-169.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>这里记录每周值得分享的科技内容，周五发布。...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-07-28">2021-07-28</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tech.meituan.com/feed/">美团技术团队</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">美团App页面视图可测性改造实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/07/28/app-xraysdk.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>美团App的页面特点
+对于不同的用户，美团App页面的呈现方式其实多种多样，这就是所谓的“千人千面”。以美团首页的“猜你喜欢”模块为例，针对与不同的用户有单列、Tab、双列等多种不同形式。这么多不同的页面样式需求，如果要在1天内时间内完成开发、测试、上线流程，研发团队也面临着很大的挑战。所以测试工程师就需要重度依赖自动化测试来形成快速的验收机制。
+
+自动化测试实施中的技术挑战
+接下来，本文将会从页面元素无法定位、Appium元素定位的原理、AccessibilityNodeInfo和Drawable等三个维度进行阐述。
+页面元素无法定位
+
+目前，美团App客户端自动化主要依托于Appium（一个开源、跨平台的测试框架，可以用来测试原生及混合的移动端应用）来实现页面元素的定位和操作，当我们通过Appium Inspector进行页面元素审查时，能通过元素审查找到的信息只有外面的边框和下方的两个按钮，其他信息均无法识别(如上图2所示)。中央位置的图片、左上角的文本信息都无法通过现有的UI自动化方案进行定位和解析。不能定位元素，也就无法进行页面的操作和断言，这就严重影响了自动化的实施工作。
+经过进一步的调研，我们发现这些页面卡片中大量使用Drawable对象来绘制页面的信息，从而导致元素无法进行定位。为什么Drawable对象无法定位呢？下面我们一起研究一下UI自动化元素定位的原理。
+Appium元素定位的原理
+目前的UI自动化测试，使用Appium进行页面元素的定位和操作。如下图所示，AppiumServer和UiAutomator2的手机端进行通信后完成元素的操作。
+
+通过阅读Appium源码发现完成一次定位的流程如下图所示：
+
+
+首先，Appium通过调用findElement的方式进行元素定位。
+然后，调用Android提供UIDevice对象的findObject方法。…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-07-23">2021-07-23</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -213,7 +273,7 @@ Pike 1.0作为Shark的衍生产品固然有其闪光…</span>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-07-29T00:36:08.109Z">2021-07-29T00:36:08.109Z</time>
+    <time id="build-timestamp" datetime="2021-07-30T00:37:43.505Z">2021-07-30T00:37:43.505Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>
