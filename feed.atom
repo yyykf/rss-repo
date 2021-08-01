@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-07-31T00:37:41.488Z</updated>
+    <updated>2021-08-01T00:43:10.028Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
@@ -142,16 +142,6 @@ Pike 1.0作为Shark的衍生产品固然有其闪光…]]></summary>
 精排层：使用亿级别特征的深度学习模型，捕捉各种显式和隐式信号，实现 Item 排序分数的精…]]></summary>
         <author>
             <name>美团技术团队</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科技爱好者周刊（第 165 期）：全端 App 的时代]]></title>
-        <id>http://www.ruanyifeng.com/blog/2021/07/weekly-issue-165.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2021/07/weekly-issue-165.html"/>
-        <updated>2021-07-02T00:19:51.000Z</updated>
-        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
         </author>
     </entry>
 </feed>
