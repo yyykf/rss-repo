@@ -259,46 +259,9 @@ Pike 1.0作为Shark的衍生产品固然有其闪光…</span>
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-07-08">2021-07-08</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://tech.meituan.com/feed/">美团技术团队</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">多业务建模在美团搜索排序中的实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/07/08/multi-business-modeling.html">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>引言
-美团的使命是“帮大家吃得更好，生活更好”，美团 App 承载的业务包括外卖、到店餐饮、买菜、优选、酒店、旅游、休闲娱乐等各类生活服务。美团首页的搜索是美团 App 上各类生活服务最大的流量分发入口，每天为数千万的用户提供各种服务。美团搜索排序是一个典型的多业务混合排序建模问题，一个典型的多业务搜索场景是当用户搜索地点，如 “望京” 的时候，用户的需求不是很明确，此时搜索的结果页如下图 1 所示，下方的商家列表中会包含望京附近餐饮、电影、休闲娱乐、酒店等多种业务的结果，这就是一个多业务混合排序场景。
-
-而多业务场景存在如下几点挑战：
-
-因业务之间存在共性和特性，如何让模型兼顾这两种特性，实现更好的数据学习。比如到店餐饮对距离特征非常敏感，而旅游景点业务对距离特征相对不敏感。
-业务天然存在高频和低频特性（比如外卖和旅游），导致模型的训练数据中多业务样本数量不平衡。
-各个业务往往有自己不同的主目标，如何满足不同业务的目标，最终能够提升搜索的用户体验。
-
-本文分享了美团搜索中的多业务排序建模优化工作，我们主要聚焦在到店商家多业务场景，后续的内容会分为以下四个部分：第一部分是对美团搜索排序分层架构进行简单介绍；第二部分会介绍多路融合层上的多业务融合建模；第三部分会介绍精排模型的多业务排序建模；最后一部分是总结和展望。希望能对从事相关工作的同学有所启发或者帮助。
-排序流程简介
-美团搜索系统流程如下图 2 所示，整体流程分为数据层、召回层、排序层和展示层。其中排序层分为以下几个子部分：
-
-粗排层：使用相对简单的模型对召回候选集进行初步过滤，实现排序效果和性能的 Trade-off。
-多路融合层：使用查询词特征、上下文场景特征构建配额模型，进行不同业务候选集的数量控制，实现用户需求的精确理解。
-精排层：使用亿级别特征的深度学习模型，捕捉各种显式和隐式信号，实现 Item 排序分数的精…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-08-06T00:39:29.542Z">2021-08-06T00:39:29.542Z</time>
+    <time id="build-timestamp" datetime="2021-08-07T00:34:26.419Z">2021-08-07T00:34:26.419Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>
