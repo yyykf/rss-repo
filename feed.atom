@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-08-07T00:34:26.435Z</updated>
+    <updated>2021-08-09T00:39:26.904Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
@@ -130,16 +130,6 @@ Pike 1.0作为Shark的衍生产品固然有其闪光…]]></summary>
 为了解决上述问题，我们尝试从一个外部视角，结合第一性原理去进行剖析。在整个人类社会中，按照马斯洛需求层次[1]的理论，人的需求是可以被归纳及分层的。如果将人类社会看作一个系统，人类在其中一个称为“市场…]]></summary>
         <author>
             <name>美团技术团队</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科技爱好者周刊（第 166 期）：视频学习胜过读书吗？]]></title>
-        <id>http://www.ruanyifeng.com/blog/2021/07/weekly-issue-166.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2021/07/weekly-issue-166.html"/>
-        <updated>2021-07-09T00:45:10.000Z</updated>
-        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
         </author>
     </entry>
 </feed>
