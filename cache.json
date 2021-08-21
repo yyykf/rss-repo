@@ -12,6 +12,15 @@
       "siteUrl": "http://www.ruanyifeng.com/blog/",
       "articles": [
         {
+          "id": "http://www.ruanyifeng.com/blog/2021/08/weekly-issue-172.html",
+          "author": null,
+          "description": "这里记录每周值得分享的科技内容，周五发布。...",
+          "link": "http://www.ruanyifeng.com/blog/2021/08/weekly-issue-172.html",
+          "publishedOn": "2021-08-20T00:36:06.000Z",
+          "wordCount": 1001,
+          "title": "科技爱好者周刊（第 172 期）：我们会死于气候灾难吗？"
+        },
+        {
           "id": "http://www.ruanyifeng.com/blog/2021/08/weekly-issue-171.html",
           "author": null,
           "description": "这里记录每周值得分享的科技内容，周五发布。...",
@@ -55,6 +64,15 @@
       "siteUrl": "https://tech.meituan.com/feed/",
       "articles": [
         {
+          "id": "https://tech.meituan.com/2021/08/19/low-resource-learning.html",
+          "author": "美团技术团队",
+          "description": "作者简介\n骆颖、徐俊、谢睿、武威等，均来自美团搜索与NLP部/NLP中心。\n招聘信息\n美团搜索与NLP部/NLP中心是负责美团人工智能技术研发的核心团队，使命是打造世界一流的自然语言处理核心技术和服务能力，依托NLP（自然语言处理）、Deep Learning（深度学习）、Knowledge Graph（知识图谱）等技术，处理美团海量文本数据，为美团各项业务提供智能的文本语义理解服务。\nNLP中心长期招聘自然语言处理算法专家/机器学习算法专家，感兴趣的同学可以将简历发送至xujun12@meituan.com。",
+          "link": "https://tech.meituan.com/2021/08/19/low-resource-learning.html",
+          "publishedOn": "2021-08-19T00:00:00.000Z",
+          "wordCount": 28,
+          "title": "小样本学习及其在美团场景中的应用"
+        },
+        {
           "id": "https://tech.meituan.com/2021/08/12/kdd-2021-aitm.html",
           "author": "美团技术团队",
           "description": "论文下载：《Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising》\n源代码：https://github.com/xidongbo/AITM\n\n\n\n招聘信息\n美团金融智能应用团队算法岗位持续热招中，诚招优秀算法工程师及专家，坐标北京/上海。招聘岗位包括：\n营销算法工程师/专家\n\n服务美团金融各业务场景，负责营销获客、留存促活等场景的算法设计与开发，综合机器学习与优化技术，解决金融营销问题；\n沉淀算法平台能力，提升算法应用的效率，提供客群挖掘、权益分配、素材匹配、动态创意、运筹规划、精准触达等智能解决方案；\n结合美团金融业务场景，对深度学习、强化学习、知识图谱等人工智能前沿技术探索创新，实施创新技术沉淀和落地。\n\n风控算法工程师/专家\n\n通过机器学习模型与策略的开发优化，持续提升对于金融风险行为的识别能力；\n深入理解业务，应用机器学习技术提高风控工作的自动化程度，全面提升业务效率；\n跟进人工智能的前沿技术，并在金融风控场景中探索落地。\n\nNLP算法工程师/专家\n\n基于美团金融业务场景，结合自然语言处理和机器学习相关技术，落地智能对话机器人到金融营销、风险管理、客服等多个场景；\n参与研发对话机器人的相关项目，包括但不限于语义理解、多轮对话管理等相关算法的开发和优化；\n持续跟进学术界和工业界相关技术的发展，并快速应用于项目中。\n\n欢迎感兴趣的同学发送简历至：chenzhen06@meituan.com（邮件标题注明：美团金融智能应用团队）。\n参考文献\n\n[1] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, an…",
@@ -89,15 +107,6 @@
           "publishedOn": "2021-07-28T00:00:00.000Z",
           "wordCount": 802,
           "title": "美团App页面视图可测性改造实践"
-        },
-        {
-          "id": "https://tech.meituan.com/2021/07/22/pike-2.0.html",
-          "author": "美团技术团队",
-          "description": "1 Pike的前世今生\n1.1 Pike 1.0的诞生背景\n2015年，美团诞生了Shark终端网络通道，为公司移动端提供长连代理加速服务。Shark通过网络接入点的全球多地部署和保持长连来提升网络请求的端到端成功率，降低端到端延时，从而提升用户体验。\nPike 1.0是基于Shark长连通道实现的应用内推送服务。由于底层传输基于Shark长连通道，使得Pike 1.0天生便具有了低延时、高可靠、防DNS劫持等优秀基因。目前Pike 1.0在美团内部的实时互动、营销推送、状态下发、配置同步等业务场景都有广泛使用。\n1.2 Pike 1.0的工作流程\n移动端SDK会在每次长连接创建成功后，使用APPID、设备唯一标识UnionID（美团唯一标识、点评唯一标识等）向服务器发起注册，在注册成功之后业务服务端就可以通过Pike 1.0服务端SDK提供的接口，主动向设备的App推送消息。服务端推送的消息通过长连接通道抵达客户端，最后通过注册的回调接口投递给业务方。整体工作流程参见下图：\n\n1.3 Pike 1.0的优势\nPike 1.0底层传输基于Shark长连通道，所以Pike 1.0在以下几个方面有不错的表现：\n\n防DNS劫持：底层通道直接使用IP直连，省去DNS解析耗时的同时也避免了被DNS劫持的风险。\n低延时：Shark长连接采用就近接入点长连接的方式，省去了传统HTTP传输需要多次建连、握手的消耗，端到端数据传输延时相比HTTP大幅缩短。\n安全性好：Shark采用自定义二进制协议进行数据传输，进行了通道级别的TLS加密，防篡改，更安全。\n更好的境外体验：Pike 1.0与Shark共享服务集群，Shark长连通道在海外多地都部署了接入点，代理加速接入，网络延时及成功率表现要优于常规请求。\n\n1.4 Pike 1.0的痛点\nPike 1.0作为Shark的衍生产品固然有其闪光…",
-          "link": "https://tech.meituan.com/2021/07/22/pike-2.0.html",
-          "publishedOn": "2021-07-22T00:00:00.000Z",
-          "wordCount": 206,
-          "title": "美团终端消息投递服务Pike的演进之路"
         }
       ]
     }

@@ -16,6 +16,54 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-08-20">2021-08-20</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">科技爱好者周刊（第 172 期）：我们会死于气候灾难吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="http://www.ruanyifeng.com/blog/2021/08/weekly-issue-172.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>这里记录每周值得分享的科技内容，周五发布。...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-08-19">2021-08-19</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tech.meituan.com/feed/">美团技术团队</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">小样本学习及其在美团场景中的应用</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/08/19/low-resource-learning.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>作者简介
+骆颖、徐俊、谢睿、武威等，均来自美团搜索与NLP部/NLP中心。
+招聘信息
+美团搜索与NLP部/NLP中心是负责美团人工智能技术研发的核心团队，使命是打造世界一流的自然语言处理核心技术和服务能力，依托NLP（自然语言处理）、Deep Learning（深度学习）、Knowledge Graph（知识图谱）等技术，处理美团海量文本数据，为美团各项业务提供智能的文本语义理解服务。
+NLP中心长期招聘自然语言处理算法专家/机器学习算法专家，感兴趣的同学可以将简历发送至xujun12@meituan.com。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-08-13">2021-08-13</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -252,47 +300,9 @@ Appium元素定位的原理
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-07-22">2021-07-22</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://tech.meituan.com/feed/">美团技术团队</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">美团终端消息投递服务Pike的演进之路</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://tech.meituan.com/2021/07/22/pike-2.0.html">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>1 Pike的前世今生
-1.1 Pike 1.0的诞生背景
-2015年，美团诞生了Shark终端网络通道，为公司移动端提供长连代理加速服务。Shark通过网络接入点的全球多地部署和保持长连来提升网络请求的端到端成功率，降低端到端延时，从而提升用户体验。
-Pike 1.0是基于Shark长连通道实现的应用内推送服务。由于底层传输基于Shark长连通道，使得Pike 1.0天生便具有了低延时、高可靠、防DNS劫持等优秀基因。目前Pike 1.0在美团内部的实时互动、营销推送、状态下发、配置同步等业务场景都有广泛使用。
-1.2 Pike 1.0的工作流程
-移动端SDK会在每次长连接创建成功后，使用APPID、设备唯一标识UnionID（美团唯一标识、点评唯一标识等）向服务器发起注册，在注册成功之后业务服务端就可以通过Pike 1.0服务端SDK提供的接口，主动向设备的App推送消息。服务端推送的消息通过长连接通道抵达客户端，最后通过注册的回调接口投递给业务方。整体工作流程参见下图：
-
-1.3 Pike 1.0的优势
-Pike 1.0底层传输基于Shark长连通道，所以Pike 1.0在以下几个方面有不错的表现：
-
-防DNS劫持：底层通道直接使用IP直连，省去DNS解析耗时的同时也避免了被DNS劫持的风险。
-低延时：Shark长连接采用就近接入点长连接的方式，省去了传统HTTP传输需要多次建连、握手的消耗，端到端数据传输延时相比HTTP大幅缩短。
-安全性好：Shark采用自定义二进制协议进行数据传输，进行了通道级别的TLS加密，防篡改，更安全。
-更好的境外体验：Pike 1.0与Shark共享服务集群，Shark长连通道在海外多地都部署了接入点，代理加速接入，网络延时及成功率表现要优于常规请求。
-
-1.4 Pike 1.0的痛点
-Pike 1.0作为Shark的衍生产品固然有其闪光…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-08-18T00:36:33.096Z">2021-08-18T00:36:33.096Z</time>
+    <time id="build-timestamp" datetime="2021-08-21T00:36:20.202Z">2021-08-21T00:36:20.202Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>
