@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yyykf.github.io/rss-repo/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-08-21T00:36:20.222Z</updated>
+    <updated>2021-08-22T00:36:18.182Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://yyykf.github.io/rss-repo/index.html"/>
     <link rel="self" href="https://yyykf.github.io/rss-repo/feed.atom"/>
@@ -164,16 +164,6 @@ Appium元素定位的原理
 然后，调用Android提供UIDevice对象的findObject方法。…]]></summary>
         <author>
             <name>美团技术团队</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科技爱好者周刊（第 168 期）：游戏《底特律：变人》]]></title>
-        <id>http://www.ruanyifeng.com/blog/2021/07/weekly-issue-168.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2021/07/weekly-issue-168.html"/>
-        <updated>2021-07-23T00:34:09.000Z</updated>
-        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。...]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
         </author>
     </entry>
 </feed>
