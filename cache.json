@@ -12,6 +12,24 @@
       "siteUrl": "http://www.ruanyifeng.com/blog/",
       "articles": [
         {
+          "id": "http://www.ruanyifeng.com/blog/2021/08/weekly-issue-173.html",
+          "author": null,
+          "description": "这里记录每周值得分享的科技内容，周五发布。...",
+          "link": "http://www.ruanyifeng.com/blog/2021/08/weekly-issue-173.html",
+          "publishedOn": "2021-08-27T00:36:29.000Z",
+          "wordCount": 425,
+          "title": "科技爱好者周刊（第 173 期）：网络收音机的设计"
+        },
+        {
+          "id": "http://www.ruanyifeng.com/blog/2021/08/best-note-taking-software-for-programmers.html",
+          "author": null,
+          "description": "程序员的笔记软件，应该满足下面几个条件。...",
+          "link": "http://www.ruanyifeng.com/blog/2021/08/best-note-taking-software-for-programmers.html",
+          "publishedOn": "2021-08-26T00:42:33.000Z",
+          "wordCount": 482,
+          "title": "最适合程序员的笔记软件"
+        },
+        {
           "id": "http://www.ruanyifeng.com/blog/2021/08/weekly-issue-172.html",
           "author": null,
           "description": "这里记录每周值得分享的科技内容，周五发布。...",
@@ -55,6 +73,15 @@
       "siteUrl": "https://tech.meituan.com/feed/",
       "articles": [
         {
+          "id": "https://tech.meituan.com/2021/08/26/data-warehouse-in-meituan-waimai.html",
+          "author": "美团技术团队",
+          "description": "实时数仓以端到端低延迟、SQL标准化、快速响应变化、数据统一为目标。美团外卖数据智能组总结的最佳实践是：一个通用的实时生产平台跟一个通用交互式实时分析引擎相互配合，同时满足实时和准实时业务场景。两者合理分工，互相补充，形成易开发、易维护且效率高的流水线，兼顾开发效率与生产成本，以较好的投入产出比满足业务的多样性需求。\n01 实时场景\n\n实时数据在美团外卖的场景是非常多的，主要有以下几个方面：\n\n运营层面：比如实时业务变化，实时营销效果，当日营业情况以及当日分时业务趋势分析等。\n生产层面：比如实时系统是否可靠，系统是否稳定，实时监控系统的健康状况等。\nC端用户：比如搜索推荐排序，需要实时行为、特点等特征变量的生产，给用户推荐更加合理的内容。\n风控侧：实时风险识别、反欺诈、异常交易等，都是大量应用实时数据的场景。\n\n02 实时技术及架构\n1. 实时计算技术选型\n目前，市面上已经开源的实时技术还是很多的，比较通用的有Storm、Spark Streaming以及Flink，技术同学在做选型时要根据公司的具体业务来进行部署。\n美团外卖依托于美团整体的基础数据体系建设，从技术成熟度来讲，公司前几年主要用的是Storm。当时的Storm，在性能稳定性、可靠性以及扩展性上也是无可替代的。但随着Flink越来越成熟，从技术性能上以及框架设计优势上已经超越了Storm，从趋势来讲就像Spark替代MR一样，Storm也会慢慢被Flink替代。当然，从Storm迁移到Flink会有一个过程，我们目前有一些老的任务仍然运行在Storm上，也在不断推进任务迁移。\n\n具体Storm和Flink的对比可以参考上图表格。\n2. 实时架构\n① Lambda架构\n\nLambda是比较经典的一款架构，以前实时的场景不是很多，以离线为主，当附加了实时场景后，由于离线和实时的时效性不同，导致技术生态是不一样的。而…",
+          "link": "https://tech.meituan.com/2021/08/26/data-warehouse-in-meituan-waimai.html",
+          "publishedOn": "2021-08-26T00:00:00.000Z",
+          "wordCount": 45,
+          "title": "美团外卖实时数仓建设实践"
+        },
+        {
           "id": "https://tech.meituan.com/2021/08/19/low-resource-learning.html",
           "author": "美团技术团队",
           "description": "作者简介\n骆颖、徐俊、谢睿、武威等，均来自美团搜索与NLP部/NLP中心。\n招聘信息\n美团搜索与NLP部/NLP中心是负责美团人工智能技术研发的核心团队，使命是打造世界一流的自然语言处理核心技术和服务能力，依托NLP（自然语言处理）、Deep Learning（深度学习）、Knowledge Graph（知识图谱）等技术，处理美团海量文本数据，为美团各项业务提供智能的文本语义理解服务。\nNLP中心长期招聘自然语言处理算法专家/机器学习算法专家，感兴趣的同学可以将简历发送至xujun12@meituan.com。",
@@ -89,15 +116,6 @@
           "publishedOn": "2021-08-05T00:00:00.000Z",
           "wordCount": 202,
           "title": "ACL 2021 | 一文详解美团技术团队7篇精选论文"
-        },
-        {
-          "id": "https://tech.meituan.com/2021/07/28/app-xraysdk.html",
-          "author": "美团技术团队",
-          "description": "美团App的页面特点\n对于不同的用户，美团App页面的呈现方式其实多种多样，这就是所谓的“千人千面”。以美团首页的“猜你喜欢”模块为例，针对与不同的用户有单列、Tab、双列等多种不同形式。这么多不同的页面样式需求，如果要在1天内时间内完成开发、测试、上线流程，研发团队也面临着很大的挑战。所以测试工程师就需要重度依赖自动化测试来形成快速的验收机制。\n\n自动化测试实施中的技术挑战\n接下来，本文将会从页面元素无法定位、Appium元素定位的原理、AccessibilityNodeInfo和Drawable等三个维度进行阐述。\n页面元素无法定位\n\n目前，美团App客户端自动化主要依托于Appium（一个开源、跨平台的测试框架，可以用来测试原生及混合的移动端应用）来实现页面元素的定位和操作，当我们通过Appium Inspector进行页面元素审查时，能通过元素审查找到的信息只有外面的边框和下方的两个按钮，其他信息均无法识别(如上图2所示)。中央位置的图片、左上角的文本信息都无法通过现有的UI自动化方案进行定位和解析。不能定位元素，也就无法进行页面的操作和断言，这就严重影响了自动化的实施工作。\n经过进一步的调研，我们发现这些页面卡片中大量使用Drawable对象来绘制页面的信息，从而导致元素无法进行定位。为什么Drawable对象无法定位呢？下面我们一起研究一下UI自动化元素定位的原理。\nAppium元素定位的原理\n目前的UI自动化测试，使用Appium进行页面元素的定位和操作。如下图所示，AppiumServer和UiAutomator2的手机端进行通信后完成元素的操作。\n\n通过阅读Appium源码发现完成一次定位的流程如下图所示：\n\n\n首先，Appium通过调用findElement的方式进行元素定位。\n然后，调用Android提供UIDevice对象的findObject方法。…",
-          "link": "https://tech.meituan.com/2021/07/28/app-xraysdk.html",
-          "publishedOn": "2021-07-28T00:00:00.000Z",
-          "wordCount": 802,
-          "title": "美团App页面视图可测性改造实践"
         }
       ]
     }
